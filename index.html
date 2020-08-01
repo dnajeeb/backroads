@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./fa/css/all.min.css" />
     <!-- styles css -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Animation -->
+    <link rel="stylesheet" href="./dist/aos.css">
   </head>
   <body>
     <!-- header  -->
@@ -83,8 +85,8 @@
         </div>
       </nav>
       <!-- hero -->
-      <div class="hero">
-        <div class="hero-banner">
+      <div class="hero" >
+        <div class="hero-banner" data-aos="zoom-in-up" data-aos-duration="1500">
           <h1>continue exploring</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
@@ -106,11 +108,11 @@
       <!-- end of section title -->
       <div class="section-center about-center">
         <!-- about img wrapper -->
-        <article class="about-img">
+        <article class="about-img" data-aos="fade-right" data-aos-duration="1500">
           <img src="./img/about.jpeg" class="about-photo" alt="" />
         </article>
         <!-- about info -->
-        <article class="about-info">
+        <article class="about-info" data-aos="fade-left" data-aos-duration="1500">
           <h3>explore the difference</h3>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore
@@ -131,7 +133,8 @@
     <!-- End of Back to Top link -->
 
     <!-- services -->
-    <section class="section services" id="services">
+    <section class="section services" id="services" data-aos="fade-up"
+     data-aos-duration="1000">
       <!-- section tilte -->
       <div class="section-title">
         <h2>our <span>services</span></h2>
@@ -187,10 +190,11 @@
     <!--end services -->
 
     <!-- featured tours -->
-    <section class="section" id="featured">
+    <section class="section" id="featured" data-aos="fade-up"
+     data-aos-duration="2000">
       <!-- section tilte -->
       <div class="section-title">
-        <h2>our <span>services</span></h2>
+        <h2>featured <span>tours</span></h2>
       </div>
       <!-- end of section title -->
       <!-- featured-center -->
@@ -499,6 +503,11 @@
           return false;
         })
       });
+    </script>
+
+    <script src="./dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
 
   </body>
